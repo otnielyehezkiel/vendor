@@ -1,0 +1,62 @@
+<?php
+
+namespace VendorBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Mara
+ *
+ * @ORM\Table(name="MARA")
+ * @ORM\Entity
+ */
+class Mara
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MAKTX", type="string", length=40, nullable=true)
+     */
+    private $maktx;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MATKL", type="string", length=9, nullable=true)
+     */
+    private $matkl;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MBRSH", type="string", length=1, nullable=true)
+     */
+    private $mbrsh;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MEIS", type="string", length=3, nullable=true)
+     */
+    private $meis;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MTART", type="string", length=4, nullable=true)
+     */
+    private $mtart;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="MATNR", type="string", length=18)
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="MARA_MATNR_seq", allocationSize=1, initialValue=1)
+     */
+    private $matnr;
+
+
+}
+

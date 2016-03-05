@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="VendorBundle\Entity\Eban" table="EBAN">
+    <indexes>
+      <index name="IDX_86963C6EC5C38082" columns="MATNR"/>
+    </indexes>
+    <id name="banfn" type="string" column="BANFN" length="10">
+      <generator strategy="SEQUENCE"/>
+      <sequence-generator sequence-name="EBAN_BANFN_seq" allocation-size="1" initial-value="1"/>
+    </id>
+    <field name="bnfpo" type="smallint" column="BNFPO" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="bsart" type="string" column="BSART" length="4" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="preis" type="decimal" column="PREIS" precision="11" scale="4" nullable="true"/>
+    <field name="pspnr" type="string" column="PSPNR" length="1" nullable="true">
+      <options>
+        <option name="fixed">1</option>
+      </options>
+    </field>
+    <field name="txz01" type="string" column="TXZ01" length="18" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="werks" type="string" column="WERKS" length="4" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <many-to-one field="matnr" target-entity="Mara" fetch="LAZY">
+      <join-columns>
+        <join-column name="MATNR" referenced-column-name="MATNR"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

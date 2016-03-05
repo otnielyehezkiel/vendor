@@ -1,0 +1,7 @@
+vendor:
+    resource: "@VendorBundle/Resources/config/routing.xml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

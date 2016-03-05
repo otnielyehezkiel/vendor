@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="VendorBundle\Entity\MCountry" table="M_COUNTRY">
+    <id name="id" type="integer" column="ID">
+      <generator strategy="SEQUENCE"/>
+      <sequence-generator sequence-name="M_COUNTRY_ID_seq" allocation-size="1" initial-value="1"/>
+    </id>
+    <field name="countryKey" type="string" column="COUNTRY_KEY" length="3" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+  </entity>
+</doctrine-mapping>
