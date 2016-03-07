@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "221784eec1127cfb6fc20baceb064db0",
-    "content-hash": "0dd0360953b0a9f443504d177f8ad1b9",
+    "hash": "ca4dab1fbe2b6d76bad1614dde15b4f1",
+    "content-hash": "ee8aedec3ebb5333f33affe9b665cd15",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -773,6 +773,43 @@
             "time": "2015-11-23 12:44:25"
         },
         {
+            "name": "fergusean/nusoap",
+            "version": "0.9.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fergusean/nusoap.git",
+                "reference": "463c772ae805aed7f396d89e6dce1dc0ce4c038b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fergusean/nusoap/zipball/463c772ae805aed7f396d89e6dce1dc0ce4c038b",
+                "reference": "463c772ae805aed7f396d89e6dce1dc0ce4c038b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Dietrich Ayala",
+                    "homepage": "http://sourceforge.net/u/dietricha/profile/"
+                },
+                {
+                    "name": "Scott Nichol",
+                    "homepage": "http://sourceforge.net/u/snichol/profile/"
+                }
+            ],
+            "description": "NuSOAP re-packaged for Packagist/Composer",
+            "time": "2014-05-19 03:44:33"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.2",
             "source": {
@@ -991,6 +1028,54 @@
                 "psr-3"
             ],
             "time": "2015-10-14 12:51:02"
+        },
+        {
+            "name": "noiselabs/nusoap-bundle",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/noiselabs/NoiselabsNuSOAPBundle.git",
+                "reference": "e0fb4c102f56d0967ab0062a1b7f6804efb76e1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/noiselabs/NoiselabsNuSOAPBundle/zipball/e0fb4c102f56d0967ab0062a1b7f6804efb76e1d",
+                "reference": "e0fb4c102f56d0967ab0062a1b7f6804efb76e1d",
+                "shasum": ""
+            },
+            "require": {
+                "fergusean/nusoap": "0.9.5",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-4": {
+                    "NoiseLabs\\Bundle\\NuSOAPBundle\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Vítor Brandão",
+                    "email": "vitor@noiselabs.org",
+                    "homepage": "http://noiselabs.org"
+                }
+            ],
+            "description": "Symfony2 bundle for NuSOAP - SOAP Toolkit for PHP",
+            "homepage": "https://github.com/noiselabs/NoiselabsNuSOAPBundle",
+            "keywords": [
+                "noiselabs",
+                "soap",
+                "symfony"
+            ],
+            "time": "2015-05-19 17:59:44"
         },
         {
             "name": "paragonie/random_compat",
