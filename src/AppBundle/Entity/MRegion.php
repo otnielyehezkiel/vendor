@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorBundle\Entity;
+namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -30,5 +30,38 @@ class MRegion
     private $id;
 
 
-}
 
+    /**
+     * Set regionName
+     *
+     * @param string $regionName
+     *
+     * @return MRegion
+     */
+    public function setRegionName($regionName)
+    {
+        $this->regionName = $regionName;
+
+        return $this;
+    }
+
+    /**
+     * Get regionName
+     *
+     * @return string
+     */
+    public function getRegionName()
+    {
+        return $this->regionName;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}

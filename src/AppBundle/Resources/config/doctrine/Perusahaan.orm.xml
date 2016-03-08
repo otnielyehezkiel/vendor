@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="AppBundle\Entity\Perusahaan" table="PERUSAHAAN">
+    <id name="id" type="bigint" column="ID">
+      <generator strategy="SEQUENCE"/>
+      <sequence-generator sequence-name="PERUSAHAAN_ID_seq" allocation-size="1" initial-value="1"/>
+    </id>
+    <field name="alamat" type="string" column="ALAMAT" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="bolehHapusAhli" type="integer" column="BOLEH_HAPUS_AHLI" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="countryId" type="integer" column="COUNTRY_ID" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="cp" type="string" column="CP" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="cpHp" type="string" column="CP_HP" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="createdAt" type="datetime" column="CREATED_AT" nullable="true"/>
+    <field name="dppNomor" type="string" column="DPP_NOMOR" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="dppStatus" type="integer" column="DPP_STATUS" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="dppTanggalBerlaku" type="datetime" column="DPP_TANGGAL_BERLAKU" nullable="true"/>
+    <field name="dppTanggalMulai" type="datetime" column="DPP_TANGGAL_MULAI" nullable="true"/>
+    <field name="email" type="string" column="EMAIL" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="fax" type="string" column="FAX" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="flag" type="integer" column="FLAG" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="idErp" type="string" column="ID_ERP" length="32" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="jawaban" type="string" column="JAWABAN" length="40" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="kekayaanBersih" type="decimal" column="KEKAYAAN_BERSIH" precision="20" scale="2" nullable="true"/>
+    <field name="kota" type="string" column="KOTA" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="nama" type="string" column="NAMA" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="npwp" type="string" column="NPWP" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="password" type="string" column="PASSWORD" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="pertanyaan" type="string" column="PERTANYAAN" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="regionId" type="integer" column="REGION_ID" nullable="true">
+      <options>
+        <option name="unsigned"/>
+      </options>
+    </field>
+    <field name="state" type="integer" column="STATE" nullable="true">
+      <options>
+        <option name="unsigned"/>
+        <option name="default">0</option>
+      </options>
+    </field>
+    <field name="taxNumber" type="string" column="TAX_NUMBER" length="16" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="telepon" type="string" column="TELEPON" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="updatedAt" type="datetime" column="UPDATED_AT" nullable="true"/>
+    <field name="username" type="string" column="USERNAME" length="2000" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="vatRnum" type="string" column="VAT_RNUM" length="20" nullable="true">
+      <options>
+        <option name="fixed"/>
+      </options>
+    </field>
+    <field name="waktuAktivasi" type="datetime" column="WAKTU_AKTIVASI" nullable="true"/>
+  </entity>
+</doctrine-mapping>

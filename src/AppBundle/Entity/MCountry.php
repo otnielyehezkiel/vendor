@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorBundle\Entity;
+namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -30,5 +30,38 @@ class MCountry
     private $id;
 
 
-}
 
+    /**
+     * Set countryKey
+     *
+     * @param string $countryKey
+     *
+     * @return MCountry
+     */
+    public function setCountryKey($countryKey)
+    {
+        $this->countryKey = $countryKey;
+
+        return $this;
+    }
+
+    /**
+     * Get countryKey
+     *
+     * @return string
+     */
+    public function getCountryKey()
+    {
+        return $this->countryKey;
+    }
+
+    /**
+     * Get id
+     *
+     * @return integer
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+}

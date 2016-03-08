@@ -1,0 +1,230 @@
+<?php
+
+namespace AppBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Perusahaan
+ *
+ * @ORM\Table(name="PERUSAHAAN")
+ * @ORM\Entity
+ */
+class Perusahaan
+{
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ALAMAT", type="string", length=2000, nullable=true)
+     */
+    private $alamat;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="BOLEH_HAPUS_AHLI", type="integer", nullable=true)
+     */
+    private $bolehHapusAhli = '0';
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="COUNTRY_ID", type="integer", nullable=true)
+     */
+    private $countryId;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="CP", type="string", length=2000, nullable=true)
+     */
+    private $cp;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="CP_HP", type="string", length=2000, nullable=true)
+     */
+    private $cpHp;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="CREATED_AT", type="datetime", nullable=true)
+     */
+    private $createdAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="DPP_NOMOR", type="string", length=2000, nullable=true)
+     */
+    private $dppNomor;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="DPP_STATUS", type="integer", nullable=true)
+     */
+    private $dppStatus = '0';
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="DPP_TANGGAL_BERLAKU", type="datetime", nullable=true)
+     */
+    private $dppTanggalBerlaku;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="DPP_TANGGAL_MULAI", type="datetime", nullable=true)
+     */
+    private $dppTanggalMulai;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="EMAIL", type="string", length=2000, nullable=true)
+     */
+    private $email;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="FAX", type="string", length=2000, nullable=true)
+     */
+    private $fax;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="FLAG", type="integer", nullable=true)
+     */
+    private $flag = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="ID_ERP", type="string", length=32, nullable=true)
+     */
+    private $idErp;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="JAWABAN", type="string", length=40, nullable=true)
+     */
+    private $jawaban;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="KEKAYAAN_BERSIH", type="decimal", precision=20, scale=2, nullable=true)
+     */
+    private $kekayaanBersih;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="KOTA", type="string", length=2000, nullable=true)
+     */
+    private $kota;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NAMA", type="string", length=2000, nullable=true)
+     */
+    private $nama;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="NPWP", type="string", length=2000, nullable=true)
+     */
+    private $npwp;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="PASSWORD", type="string", length=2000, nullable=true)
+     */
+    private $password;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="PERTANYAAN", type="string", length=2000, nullable=true)
+     */
+    private $pertanyaan;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="REGION_ID", type="integer", nullable=true)
+     */
+    private $regionId;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="STATE", type="integer", nullable=true)
+     */
+    private $state = '0';
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="TAX_NUMBER", type="string", length=16, nullable=true)
+     */
+    private $taxNumber;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="TELEPON", type="string", length=2000, nullable=true)
+     */
+    private $telepon;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="UPDATED_AT", type="datetime", nullable=true)
+     */
+    private $updatedAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="USERNAME", type="string", length=2000, nullable=true)
+     */
+    private $username;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="VAT_RNUM", type="string", length=20, nullable=true)
+     */
+    private $vatRnum;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="WAKTU_AKTIVASI", type="datetime", nullable=true)
+     */
+    private $waktuAktivasi;
+
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="ID", type="bigint")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="SEQUENCE")
+     * @ORM\SequenceGenerator(sequenceName="PERUSAHAAN_ID_seq", allocationSize=1, initialValue=1)
+     */
+    private $id;
+
+
+}
+
