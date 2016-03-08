@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'ass\\XmlSecurity' => array($vendorDir . '/ass/xmlsecurity/src'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'SensioLabs\\Security' => array($vendorDir . '/sensiolabs/security-checker'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
@@ -15,5 +16,5 @@ return array(
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
     'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/lib'),
     'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib'),
-    'Doctrine\\Common\\' => array($vendorDir . '/doctrine/common/lib'),
+    'BeSimple\\' => array($vendorDir . '/besimple/soap/src'),
 );
