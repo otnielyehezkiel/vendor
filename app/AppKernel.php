@@ -18,6 +18,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new NoiseLabs\Bundle\NuSOAPBundle\NoiseLabsNuSOAPBundle(),
             new BeSimple\SoapBundle\BeSimpleSoapBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
+            //new Bgy\Doctrine\EntitySerializer(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'), true)) {

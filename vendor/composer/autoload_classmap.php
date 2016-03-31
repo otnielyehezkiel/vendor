@@ -32,6 +32,7 @@ return array(
     'nusoap_wsdlcache' => $vendorDir . '/fergusean/nusoap/lib/class.wsdlcache.php',
     'nusoap_xmlschema' => $vendorDir . '/fergusean/nusoap/lib/class.xmlschema.php',
     'nusoapservermime' => $vendorDir . '/fergusean/nusoap/lib/nusoapmime.php',
+    'sfNuSoapClient' => $vendorDir . '/fergusean/nusoap/lib/nusoap.php',
     'soap_fault' => $vendorDir . '/fergusean/nusoap/lib/class.soap_fault.php',
     'soap_parser' => $vendorDir . '/fergusean/nusoap/lib/class.soap_parser.php',
     'soap_server' => $vendorDir . '/fergusean/nusoap/lib/class.soap_server.php',

@@ -23,7 +23,8 @@
         "symfony/twig-bundle": "~2.6",
         "zendframework/zend-mime": "2.1.*",
         "besimple/soap":   "0.1.0",
-        "ass/xmlsecurity": "dev-master"
+        "ass/xmlsecurity": "dev-master",
+        "symfony/serializer": "^3.0"
         
     },
 

@@ -10,6 +10,6 @@ error_reporting(error_reporting() & ~E_USER_DEPRECATED);
  */
 $loader = require __DIR__.'/../vendor/autoload.php';
 AnnotationRegistry::registerLoader(array($loader, 'loadClass'));
-$loader->register();;
+$loader->register();
 
 return $loader;
